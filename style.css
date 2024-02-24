@@ -1,0 +1,230 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav {
+        background-color: #444;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+
+    }
+    nav {
+        display: inline-block; /* Change display to inline-block */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; /* Remove default margin */
+    }
+    
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .logo {
+        display: inline-block;
+        max-width: 200px;
+        vertical-align: middle;
+        margin-right: 20px; /* Add margin to create space between logo and nav items */
+    }
+
+    .container {
+        width: 1200px; /* Set the overall width of the website */
+        margin: 0 auto; /* Center the container */
+    }
+
+
+    section {
+        padding: 20px;
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* .parallax1 {
+        background-image: url('skate.png');
+    } */
+
+    .parallax2 {
+        background-image: url('cityscape.jpg');
+    }
+
+    .parallax3 {
+        background-image: url('real_life_location.jpg');
+    }
+
+    .parallax-content {
+        padding-top: 200px; /* Adjust padding as needed */
+        text-align: center;
+        color: #fff;
+    }
+
+    #home {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh; /* Set the height of the section to cover the viewport height */
+        z-index: 1; /* Ensure the home section appears above other sections */
+    }
+
+
+    #home iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Set the height of the iframe to cover the entire section */
+        pointer-events: none;
+    }
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        z-index: 1; /* Ensure the text appears above the video */
+    }
+
+    #about {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh; /* Set the height of the section to cover the viewport height */
+        background-image: url('about.jpg'); /* Set the background image for the about section */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure the background image covers the entire section */
+        z-index: 0; /* Set the z-index lower than the home section to ensure it appears below */
+    }
+    .about-text {
+        text-align: right;
+        font-size: 30px;
+        color: #fff;
+        line-height: 1.5;
+        width: 50%;
+        margin-right: 10%;
+    }
+    
+    @media (max-width: 768px) {
+        .about-text {
+            width: 100%;
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+    #purchase {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh; /* Set the height of the section to cover the viewport height */
+        background-image: url('purchasebackground.jpg'); /* Set the background image for the about section */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure the background image covers the entire section */
+        z-index: 0; /* Set the z-index lower than the home section to ensure it appears below */
+    }
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .product-image {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 2rem;
+    }
+    
+    .purchase-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .price {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .buy-button {
+        font-size: 1.2rem;
+        padding: 0.5rem 2rem;
+        background-color: #ff6347;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .buy-button:hover {
+        background-color: #e65100;
+    }
+
+    #community{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh; /* Set the height of the section to cover the viewport height */
+        background-image: url('community.jpg'); /* Set the background image for the about section */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure the background image covers the entire section */
+        z-index: 0; /* Set the z-index lower than the home section to ensure it appears below */
+    }
+
+    .parallax-content h1{
+        text-align: left;
+        font-size: 50px;
+        color: black;
+    }
+    .parallax-content p{
+        text-align: left;
+        color: black;
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .join{
+        align-items: left;
+        background-color: black;
+        width: 120px;
+        height: 30px;
+        margin-left:auto;
+        border-radius:5px;
+        right:50px;
+        color: white;
+        font-size: larger;
+
+    }
